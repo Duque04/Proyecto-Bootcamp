@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio climático: ¿Cómo influye en la gravedad de ciertos desastres naturales?</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo2.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        h1 {
+            font-weight: 600;
+            margin: 60px;
+            font-family: "DM Serif Text", serif; 
+            padding-top: 20px;
+            padding-bottom: 120px;
+            text-align: center;
+
+        }
+        .topholderd{
+            width: 100%;
+            height: auto;
+            background-image: url("desastre natural.png");
+        }
+
+        p {
+            margin: 100px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            background-color: #7e8e6c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-nav li {
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .main-nav a {
+            display: block;
+            color: #ecede6;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Estilos adicionales para la página de desastres naturales */
+        body {
+            background-color: #f8f8f8;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .content-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-header {
+            background: #7a8450; /* Verde más oscuro */
+            color: white;
+            padding: 20px 0;
+            border-radius: 15px 15px 0 0;
+            margin: -25px -25px 25px -25px;
+            text-align: center;
+        }
+        
+        .disaster-type {
+            cursor: pointer;
+            padding: 15px;
+            background-color: #c2cbb7;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .disaster-type:hover {
+            background-color: #9caf88;
+        }
+        
+        .disaster-details {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: none;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .prevention-tips {
+            background-color: #fdf8e9;
+            border-left: 5px solid #aaa18f;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .stat-box {
+            background-color: #a5aa70; /* Verde más oscuro */
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            margin: 15px 0;
+            font-family: "Figtree", sans-serif;
+            opacity: 0.7;
+        }
+        
+        .content-section h2, .content-section h4, .content-section h5 {
+            font-family: "DM Serif Text", serif; 
+        }
+        
+        .content-section p, .content-section li {
+            margin: 15px 0;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .content-section ul, .content-section ol {
+            margin-left: 20px;
+        }
+        
+        .prevention-header {
+            background: #9ca186; /* Mismo verde oscuro para el título de prevención */
+            color: white;
+            padding: 20px 0;
+            border-radius: 15px 15px 0 0;
+            margin: -25px -25px 25px -25px;
+            text-align: center;
+        }
+
+    </style>
+
+    <script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+
+</head>
+
+<body style="background-color: #f8f8f8;">
+    
+    <header>
+        <ul class="nav justify-content-center">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="font-family: Figtree, sans-serif; font-weight:500">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="desastres.html" style="font-family: Figtree, sans-serif; font-weight:500">Desastres Naturales</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: Figtree, sans-serif; font-weight:500">
+                Cambio Climático
+                </a>
+                <ul class="dropdown-menu" style="font-family: Figtree, sans-serif; font-weight:500">
+                <li><a class="dropdown-item" href="cambio.html">¿Qué es el cambio climático? Causas y efectos</a></li>
+                <li><a class="dropdown-item" href="transformacion.html">Transformación Energética</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="prevencion.html" style="font-family: Figtree, sans-serif; font-weight:500">Prevención y Preparación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html" style="font-family: Figtree, sans-serif; font-weight:500">Contacto</a>
+            </li>
+
+        </ul>
+
+    </header>
+
+<div class="topholderp">
+
+    <br>
+    <br>
+    <h1 style="color:#f8f8f8; font-weight:bold;">Prevención y Preparación</h1>
+
+</div>
+
+<div style="margin: 100px;">
+   <div class="content-container">
+       
+        <div class="content-section">        
+
+            <div class="prevention-tips">
+                <h4>Kit de Emergencia Recomendado</h4>
+                <ul>
+                    <li>Agua (4 litros por persona por día, para al menos 3 días)</li>
+                    <li>Alimentos no perecederos para al menos 3 días</li>
+                    <li>Radio de pilas o manivela</li>
+                    <li>Linterna y baterías extra</li>
+                    <li>Botiquín de primeros auxilios</li>
+                    <li>Silbato para pedir ayuda</li>
+                    <li>Documentos importantes en recipiente impermeable</li>
+                </ul>
+            </div>
+
+            <br>
+
+            <h2>Sistemas de Alerta Temprana</h2>
+            <p>La tecnología y los datos abiertos pueden ayudar a conocer mejor el territorio y prevenir desastres, y también a reaccionar más rápido cuando resultan imprevisibles. Algunas plataformas importantes incluyen:</p>
+            <ul>
+                <li><strong>Google Public Alerts:</strong> Disemina información sobre emergencias como noticias de evacuación por huracanes</li>
+                <li><strong>GeoPlatform:</strong> Proporciona acceso a datos geoespaciales verificados para mejorar la toma de decisiones</li>
+                <li><strong>Ushahidi:</strong> Plataforma de código abierto utilizada para facilitar la comunicación en desastres naturales</li>
+            </ul>
+
+            <br>
+
+            <h2>Plan Familiar de Emergencia</h2>
+            <p>Desarrolle un plan que incluya:</p>
+            <ol>
+                <li>Un punto de encuentro familiar en caso de separación</li>
+                <li>Una persona de contacto fuera de la zona que pueda servir como referencia</li>
+                <li>Conocimiento de los refugios locales y rutas de evacuación</li>
+                <li>Preparación para necesidades específicas (medicamentos, movilidad reducida, mascotas)</li>
+            </ol>
+        </div>
+
+        <div class="content-section">
+            <div class="disaster-type" onclick="toggleDetails('resources')">
+                <h4>Recursos Adicionales</h4>
+                <p>Para más información y alertas actualizadas, puede consultar los siguientes recursos:</p>
+            </div>
+            <div id="resources" class="disaster-details">
+                <h5>Organizaciones oficiales:</h5>
+                <ul>
+                    <li>Listo.gov - Información sobre preparación para emergencias</li>
+                    <li>EPA - Desastres naturales y consejos ambientales</li>
+                    <li>FEMA - Asistencia en desastres y preparación</li>
+                    <li>Oxfam - Informes sobre justicia climática y desastres</li>
+                </ul>
+                
+                <div class="prevention-tips">
+                    <h4>Recuerde:</h4>
+                    <p>En caso de emergencia, <strong>LLAME SIEMPRE AL 911</strong> si está en una situación de peligro inmediato y necesita ayuda de emergencia.</p>
+                    <p>Para informar sobre derrames de petróleo o sustancias peligrosas, llame al Centro de Respuesta Nacional: <strong>800-424-8802</strong>.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<footer>
+<p>Cambio climático: ¿Cómo influye en la gravedad de ciertos desastres naturales?</p>
+<p>&copy; Todos los derechos reservados. 2025.</p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+</body>
+</html>

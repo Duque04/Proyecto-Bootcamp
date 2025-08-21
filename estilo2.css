@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 28px ;
+}
+
+h1 {
+    margin: 300px;
+    padding-top: 40px;
+    padding-bottom: 110px;
+    font-family: "DM Serif Text", serif; 
+    text-align: center;
+
+}
+
+p {
+    margin: 100px;
+    font-family: "Figtree", sans-serif;
+}
+
+header {
+    background-color:#7e8e6c;
+    color: white;
+    text-align: center;
+    padding: 20px ;
+}
+
+.navbar{
+    background-color: #A5AA70;    
+}
+
+.navbar a {
+    color: #ecede6;
+}
+
+.navbar button {
+    color: #ecede6;
+}
+
+.navbar span{
+    color: #ecede6;
+}
+
+.nav{
+    --bs-link-color: #ecede6;
+    --bs-link-hover-color: #7a8450;
+    --bs-secondary-color: #7a8450;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    position: relative;
+    padding: 0 20px;
+}
+
+.main-nav a {
+    display: block;
+    color: #ecede6;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.card{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.card-body{
+    margin: 20px;
+    font-family: "Figtree", sans-serif;
+}
+
+.rounded{
+    margin-left: 100px;
+}
+
+.rounded2{
+    margin-left: 140px;
+}
+
+.topholder{
+    max-width: 100%;
+    height: auto;
+    background-image: url("valle del cocora 2.0.png");
+}
+
+.topholderp{
+    max-width: 100%;
+    height: auto;
+    background-image: url("ciclon.png");
+}
+
+.topholderc{
+    max-width: 100%;
+    height: auto;
+    background-image: url("cambio climatico.png");
+}
+
+.topholdercon{
+    max-width: 100%;
+    height: auto;
+    background-image: url("contacto.png");
+}
+
+

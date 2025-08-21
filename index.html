@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio climático: ¿Cómo influye en la gravedad de ciertos desastres naturales?</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo2.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        h1 {
+            font-weight: 600;
+            margin: 60px;
+            font-family: "DM Serif Text", serif; 
+            padding-top: 20px;
+            padding-bottom: 120px;
+            text-align: center;
+
+        }
+        .topholderd{
+            width: 100%;
+            height: auto;
+            background-image: url("desastre natural.png");
+        }
+
+        p {
+            margin: 100px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header {
+            background-color: #7e8e6c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-nav li {
+            position: relative;
+            padding: 0 20px;
+        }
+
+        .main-nav a {
+            display: block;
+            color: #ecede6;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Estilos adicionales para la página de desastres naturales */
+        body {
+            background-color: #f8f8f8;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .content-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .section-header {
+            background: #7a8450; /* Verde más oscuro */
+            color: white;
+            padding: 20px 0;
+            border-radius: 15px 15px 0 0;
+            margin: -25px -25px 25px -25px;
+            text-align: center;
+        }
+        
+        .disaster-type {
+            cursor: pointer;
+            padding: 15px;
+            background-color: #c2cbb7;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .disaster-type:hover {
+            background-color: #9caf88;
+        }
+        
+        .disaster-details {
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: none;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .prevention-tips {
+            background-color: #fdf8e9;
+            border-left: 5px solid #aaa18f;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .stat-box {
+            background-color: #b1b587; /* Verde más oscuro */
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            margin: 15px 0;
+            font-family: "Figtree", sans-serif;
+        }
+
+        .stat-boximg {
+            background-color: white;
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            margin: 15px 0;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .content-section h2, .content-section h4, .content-section h5 {
+            font-family: "DM Serif Text", serif; 
+        }
+        
+        .content-section p, .content-section li {
+            margin: 15px 0;
+            font-family: "Figtree", sans-serif;
+        }
+        
+        .content-section ul, .content-section ol {
+            margin-left: 20px;
+        }
+        
+        .prevention-header {
+            background: #9ca186; /* Mismo verde oscuro para el título de prevención */
+            color: white;
+            padding: 20px 0;
+            border-radius: 15px 15px 0 0;
+            margin: -25px -25px 25px -25px;
+            text-align: center;
+        }
+
+    </style>
+
+    <script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "block") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+
+</head>
+<body style="background-color: #f8f8f8;">
+    <header>
+        <ul class="nav justify-content-center">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="font-family: Figtree, sans-serif; font-weight:500 ">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="desastres.html" style="font-family: Figtree, sans; font-weight:500; ">Desastres Naturales</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: Figtree, sans-serif; font-weight:500">
+                Cambio Climático
+                </a>
+                <ul class="dropdown-menu" style="font-family: Figtree, sans-serif; font-weight:500">
+                <li><a class="dropdown-item" href="cambio.html">¿Qué es el cambio climático? Causas y efectos</a></li>
+                <li><a class="dropdown-item" href="transformacion.html">Transformación Energética</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="prevencion.html" style="font-family: Figtree, sans-serif; font-weight:500 ">Prevención y Preparación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html" style="font-family: Figtree, sans-serif; font-weight:500 ">Contacto</a>
+            </li>
+
+        </ul>
+
+    </header>
+
+    <div class="topholder">
+
+        <br>
+        <br>
+        <h1 style="color:#f8f8f8; font-weight:bold;">Cambio climático: ¿Cómo influye en la gravedad de ciertos desastres naturales?</h1>
+
+    </div>
+
+    <div style="margin: 100px;">
+    <div class="content-container">
+
+            <div class="content-section">
+
+                <h2>¿Cómo influye en la gravedad de ciertos desastres naturales?</h2>
+
+                <p>A pesar de que los desastres naturales son fenómenos que no ocurren por la intervención directa del ser humano, son generados por la naturaleza y afectaciones como el cambio climático han agravado este tipo de fenómenos. El objetivo de esta página web es informar sobre el cambio climático y cómo influyen en la gravedad de ciertos desastres naturales, explicando qué son los desastres, cuáles son y cómo prevenirlos. A su vez se va a hablar sobre cómo la transición energética es una práctica fundamental para ayudar a mitigar las consecuencias que se generan por el deterioro del ambiente.</p>
+
+                <div class="stat-boximg">
+                    <img src="https://epre.gov.ar/web/wp-content/uploads/2023/12/Transicion-energetica-1024x512-1.jpg" alt="Descripción" style="width:400px; border-radius:20px; color: white;">
+                </div>
+
+            </div>
+
+            <div class="content-section">
+
+                <h2>Información adicional</h2>
+
+                <div class="stat-boximg">
+                        <iframe width="1296" height="729" src="https://www.youtube.com/embed/6liJ5cWw_zo" title="01. ¿Qué es el cambio climático?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:1000px; border-radius:20px;"></iframe>
+                </div>
+
+                <div class="stat-boximg">
+                        <iframe width="1296" height="729" src="https://www.youtube.com/embed/6LV7O7YwLuU" title="Fenómenos Naturales para Niños | Desastres Naturales | Videos Educativos Para Niños" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:1000px; border-radius:20px;"></iframe>
+                </div>
+
+                <div class="stat-boximg">
+                        <iframe width="1296" height="729" src="https://www.youtube.com/embed/b2khuHTzkeU" title="🔋 La ENERGÍA y sus TRANSFORMACIONES 🌀 Renovables vs No Renovables ⚡ RESUMEN Completo en 7 Minutos." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:1000px; border-radius:20px;"></iframe>
+                </div>
+
+            </div>
+
+
+    </div>
+</div>
+
+<footer>
+<p>Cambio climático: ¿Cómo influye en la gravedad de ciertos desastres naturales?</p>
+<p>&copy; Todos los derechos reservados. 2025.</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+</body>
+</html>
